@@ -1,4 +1,12 @@
 ---
+# ####
+# 原文链接：https://blog.csdn.net/qinwuxian19891211/article/details/123782999
+# ansible group_vars和host_vars
+# group_vars和host_vars都用于存放变量，group_vars用于存放group相关的变量，而host_vars用于存放host相关的变量。
+# 对于不同的ansible命令行，对于这两个folder的查找路径是不一样的。
+# 如果是ansible-playbook命令，他会去当前playbook所在文件的同级目录下去查找这两个文件夹
+# 如果是ansible和ansible-console命令行，则会去当前playbook所在文件统计目录下的inventory文件夹下去查找这两个文件夹。
+# ####
 # Variables listed here are applicable to all host groups
 wp_version: 4.6
 wp_sha256sum: c1856cf969b1e73025ba2c681491908c3a4a6c5a2333f4531bf9bfb90f634380
